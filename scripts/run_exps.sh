@@ -1,5 +1,11 @@
-#!/bin/bash
+#!/bin/bash                      
+#SBATCH -t 2:00:00          # walltime
+#SBATCH -n 1                 # one CPU (hyperthreaded) cores
+#SBATCH --mem=4g
+#SBATCH --gres=gpu:1
 
+source ~/anaconda3/etc/profile.d/conda.sh
+conda activate cxg
 
 DATASET='testexp'
 
@@ -51,3 +57,5 @@ do
         # rm -rf ${CHECKPOINT_PATH}/mnli_${pair}_unused_token_numbers_${NUM1}_${NUM2}_learning_rate_${LR}_seed_${i}/checkpoint*
     done
 done
+
+conda deactivate

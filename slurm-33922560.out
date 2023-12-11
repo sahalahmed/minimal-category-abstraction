@@ -1,0 +1,2400 @@
+usage: conda [-h] [--no-plugins] [-V] COMMAND ...
+conda: error: argument COMMAND: invalid choice: 'activate' (choose from 'clean', 'compare', 'config', 'create', 'info', 'init', 'install', 'list', 'notices', 'package', 'remove', 'uninstall', 'rename', 'run', 'search', 'update', 'upgrade', 'build', 'content-trust', 'convert', 'debug', 'develop', 'doctor', 'index', 'inspect', 'metapackage', 'render', 'skeleton', 'env', 'token', 'pack', 'verify', 'repo', 'server')
+12/04/2023 10:11:41 - WARNING - __main__ -   Process rank: -1, device: cuda, n_gpu: 1, distributed training: False, 16-bits training: False
+Vocab size in initial config: 30522
+Vocab size in final tokenizer: 30522
+tokens: [unused1] [unused2]
+token ids: 2 3
+token sequences: [[2], [3]]
+token sequences text: ['[unused1]', '[unused2]']
+model.safetensors:   0%|          | 0.00/440M [00:00<?, ?B/s]model.safetensors:   2%|▏         | 10.5M/440M [00:00<00:04, 95.3MB/s]model.safetensors:   5%|▍         | 21.0M/440M [00:00<00:04, 98.8MB/s]model.safetensors:  10%|▉         | 41.9M/440M [00:00<00:03, 106MB/s] model.safetensors:  14%|█▍        | 62.9M/440M [00:00<00:03, 111MB/s]model.safetensors:  19%|█▉        | 83.9M/440M [00:00<00:03, 113MB/s]model.safetensors:  24%|██▍       | 105M/440M [00:00<00:02, 115MB/s] model.safetensors:  29%|██▊       | 126M/440M [00:01<00:02, 116MB/s]model.safetensors:  33%|███▎      | 147M/440M [00:01<00:02, 116MB/s]model.safetensors:  38%|███▊      | 168M/440M [00:01<00:02, 117MB/s]model.safetensors:  43%|████▎     | 189M/440M [00:01<00:02, 117MB/s]model.safetensors:  48%|████▊     | 210M/440M [00:01<00:01, 117MB/s]model.safetensors:  52%|█████▏    | 231M/440M [00:02<00:01, 117MB/s]model.safetensors:  57%|█████▋    | 252M/440M [00:02<00:01, 117MB/s]model.safetensors:  62%|██████▏   | 273M/440M [00:02<00:01, 117MB/s]model.safetensors:  67%|██████▋   | 294M/440M [00:02<00:01, 117MB/s]model.safetensors:  71%|███████▏  | 315M/440M [00:02<00:01, 117MB/s]model.safetensors:  76%|███████▌  | 336M/440M [00:02<00:00, 117MB/s]model.safetensors:  81%|████████  | 357M/440M [00:03<00:00, 117MB/s]model.safetensors:  86%|████████▌ | 377M/440M [00:03<00:00, 117MB/s]model.safetensors:  90%|█████████ | 398M/440M [00:03<00:00, 117MB/s]model.safetensors:  95%|█████████▌| 419M/440M [00:03<00:00, 117MB/s]model.safetensors: 100%|█████████▉| 440M/440M [00:03<00:00, 117MB/s]model.safetensors: 100%|██████████| 440M/440M [00:03<00:00, 115MB/s]
+12/04/2023 10:11:51 - INFO - __main__ -   Training/evaluation parameters Namespace(adam_epsilon=1e-08, block_size=512, cache_dir=None, config_name=None, device=device(type='cuda'), do_eval=False, do_train=True, eval_all_checkpoints=False, eval_data_file=None, eval_longer=False, eval_prefix='data/test-experiment//nv_f/testexp', evaluate_during_training=True, fp16=False, fp16_opt_level='O1', gradient_accumulation_steps=1, learning_rate=0.001, line_by_line=True, local_rank=-1, logging_steps=1, max_grad_norm=1.0, max_steps=-1, mlm=True, mlm_probability=0.15, model_name_or_path='bert-base-uncased', model_type='bert', n_gpu=1, n_tokens=1, no_cuda=False, nonce_mlm_probability=None, num_train_epochs=70.0, output_dir='checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1', overwrite_cache=False, overwrite_output_dir=True, per_gpu_eval_batch_size=16, per_gpu_train_batch_size=4, pll_whole_sentence=False, prepend_space=None, replace_by_mask_probability=0.8, replace_by_random_probability=0.1, save_embeddings_for_stimuli_splits=['dev'], save_steps=-1, save_total_limit=None, seed=1, server_ip='', server_port='', should_continue=False, token_ids=[2, 3], token_sequences=[[2], [3]], token_sequences_text=['[unused1]', '[unused2]'], tokenizer_name=None, tokens=['[unused1]', '[unused2]'], train_data_file='data/test-experiment//nv_f/testexp_finetune.txt', unused_list=['[unused0]', '[unused1]', '[unused2]', '[unused3]', '[unused4]', '[unused5]', '[unused6]', '[unused7]', '[unused8]', '[unused9]', '[unused10]', '[unused11]', '[unused12]', '[unused13]', '[unused14]', '[unused15]', '[unused16]', '[unused17]', '[unused18]', '[unused19]', '[unused20]', '[unused21]', '[unused22]', '[unused23]', '[unused24]', '[unused25]', '[unused26]', '[unused27]', '[unused28]', '[unused29]', '[unused30]', '[unused31]', '[unused32]', '[unused33]', '[unused34]', '[unused35]', '[unused36]', '[unused37]', '[unused38]', '[unused39]', '[unused40]', '[unused41]', '[unused42]', '[unused43]', '[unused44]', '[unused45]', '[unused46]', '[unused47]', '[unused48]', '[unused49]', '[unused50]', '[unused51]', '[unused52]', '[unused53]', '[unused54]', '[unused55]', '[unused56]', '[unused57]', '[unused58]', '[unused59]', '[unused60]', '[unused61]', '[unused62]', '[unused63]', '[unused64]', '[unused65]', '[unused66]', '[unused67]', '[unused68]', '[unused69]', '[unused70]', '[unused71]', '[unused72]', '[unused73]', '[unused74]', '[unused75]', '[unused76]', '[unused77]', '[unused78]', '[unused79]', '[unused80]', '[unused81]', '[unused82]', '[unused83]', '[unused84]', '[unused85]', '[unused86]', '[unused87]', '[unused88]', '[unused89]', '[unused90]', '[unused91]', '[unused92]', '[unused93]', '[unused94]', '[unused95]', '[unused96]', '[unused97]', '[unused98]', '[unused99]', '[unused100]', '[unused101]', '[unused102]', '[unused103]', '[unused104]', '[unused105]', '[unused106]', '[unused107]', '[unused108]', '[unused109]', '[unused110]', '[unused111]', '[unused112]', '[unused113]', '[unused114]', '[unused115]', '[unused116]', '[unused117]', '[unused118]', '[unused119]', '[unused120]', '[unused121]', '[unused122]', '[unused123]', '[unused124]', '[unused125]', '[unused126]', '[unused127]', '[unused128]', '[unused129]', '[unused130]', '[unused131]', '[unused132]', '[unused133]', '[unused134]', '[unused135]', '[unused136]', '[unused137]', '[unused138]', '[unused139]', '[unused140]', '[unused141]', '[unused142]', '[unused143]', '[unused144]', '[unused145]', '[unused146]', '[unused147]', '[unused148]', '[unused149]', '[unused150]', '[unused151]', '[unused152]', '[unused153]', '[unused154]', '[unused155]', '[unused156]', '[unused157]', '[unused158]', '[unused159]', '[unused160]', '[unused161]', '[unused162]', '[unused163]', '[unused164]', '[unused165]', '[unused166]', '[unused167]', '[unused168]', '[unused169]', '[unused170]', '[unused171]', '[unused172]', '[unused173]', '[unused174]', '[unused175]', '[unused176]', '[unused177]', '[unused178]', '[unused179]', '[unused180]', '[unused181]', '[unused182]', '[unused183]', '[unused184]', '[unused185]', '[unused186]', '[unused187]', '[unused188]', '[unused189]', '[unused190]', '[unused191]', '[unused192]', '[unused193]', '[unused194]', '[unused195]', '[unused196]', '[unused197]', '[unused198]', '[unused199]', '[unused200]', '[unused201]', '[unused202]', '[unused203]', '[unused204]', '[unused205]', '[unused206]', '[unused207]', '[unused208]', '[unused209]', '[unused210]', '[unused211]', '[unused212]', '[unused213]', '[unused214]', '[unused215]', '[unused216]', '[unused217]', '[unused218]', '[unused219]', '[unused220]', '[unused221]', '[unused222]', '[unused223]', '[unused224]', '[unused225]', '[unused226]', '[unused227]', '[unused228]', '[unused229]', '[unused230]', '[unused231]', '[unused232]', '[unused233]', '[unused234]', '[unused235]', '[unused236]', '[unused237]', '[unused238]', '[unused239]', '[unused240]', '[unused241]', '[unused242]', '[unused243]', '[unused244]', '[unused245]', '[unused246]', '[unused247]', '[unused248]', '[unused249]', '[unused250]', '[unused251]', '[unused252]', '[unused253]', '[unused254]', '[unused255]', '[unused256]', '[unused257]', '[unused258]', '[unused259]', '[unused260]', '[unused261]', '[unused262]', '[unused263]', '[unused264]', '[unused265]', '[unused266]', '[unused267]', '[unused268]', '[unused269]', '[unused270]', '[unused271]', '[unused272]', '[unused273]', '[unused274]', '[unused275]', '[unused276]', '[unused277]', '[unused278]', '[unused279]', '[unused280]', '[unused281]', '[unused282]', '[unused283]', '[unused284]', '[unused285]', '[unused286]', '[unused287]', '[unused288]', '[unused289]', '[unused290]', '[unused291]', '[unused292]', '[unused293]', '[unused294]', '[unused295]', '[unused296]', '[unused297]', '[unused298]', '[unused299]', '[unused300]', '[unused301]', '[unused302]', '[unused303]', '[unused304]', '[unused305]', '[unused306]', '[unused307]', '[unused308]', '[unused309]', '[unused310]', '[unused311]', '[unused312]', '[unused313]', '[unused314]', '[unused315]', '[unused316]', '[unused317]', '[unused318]', '[unused319]', '[unused320]', '[unused321]', '[unused322]', '[unused323]', '[unused324]', '[unused325]', '[unused326]', '[unused327]', '[unused328]', '[unused329]', '[unused330]', '[unused331]', '[unused332]', '[unused333]', '[unused334]', '[unused335]', '[unused336]', '[unused337]', '[unused338]', '[unused339]', '[unused340]', '[unused341]', '[unused342]', '[unused343]', '[unused344]', '[unused345]', '[unused346]', '[unused347]', '[unused348]', '[unused349]', '[unused350]', '[unused351]', '[unused352]', '[unused353]', '[unused354]', '[unused355]', '[unused356]', '[unused357]', '[unused358]', '[unused359]', '[unused360]', '[unused361]', '[unused362]', '[unused363]', '[unused364]', '[unused365]', '[unused366]', '[unused367]', '[unused368]', '[unused369]', '[unused370]', '[unused371]', '[unused372]', '[unused373]', '[unused374]', '[unused375]', '[unused376]', '[unused377]', '[unused378]', '[unused379]', '[unused380]', '[unused381]', '[unused382]', '[unused383]', '[unused384]', '[unused385]', '[unused386]', '[unused387]', '[unused388]', '[unused389]', '[unused390]', '[unused391]', '[unused392]', '[unused393]', '[unused394]', '[unused395]', '[unused396]', '[unused397]', '[unused398]', '[unused399]', '[unused400]', '[unused401]', '[unused402]', '[unused403]', '[unused404]', '[unused405]', '[unused406]', '[unused407]', '[unused408]', '[unused409]', '[unused410]', '[unused411]', '[unused412]', '[unused413]', '[unused414]', '[unused415]', '[unused416]', '[unused417]', '[unused418]', '[unused419]', '[unused420]', '[unused421]', '[unused422]', '[unused423]', '[unused424]', '[unused425]', '[unused426]', '[unused427]', '[unused428]', '[unused429]', '[unused430]', '[unused431]', '[unused432]', '[unused433]', '[unused434]', '[unused435]', '[unused436]', '[unused437]', '[unused438]', '[unused439]', '[unused440]', '[unused441]', '[unused442]', '[unused443]', '[unused444]', '[unused445]', '[unused446]', '[unused447]', '[unused448]', '[unused449]', '[unused450]', '[unused451]', '[unused452]', '[unused453]', '[unused454]', '[unused455]', '[unused456]', '[unused457]', '[unused458]', '[unused459]', '[unused460]', '[unused461]', '[unused462]', '[unused463]', '[unused464]', '[unused465]', '[unused466]', '[unused467]', '[unused468]', '[unused469]', '[unused470]', '[unused471]', '[unused472]', '[unused473]', '[unused474]', '[unused475]', '[unused476]', '[unused477]', '[unused478]', '[unused479]', '[unused480]', '[unused481]', '[unused482]', '[unused483]', '[unused484]', '[unused485]', '[unused486]', '[unused487]', '[unused488]', '[unused489]', '[unused490]', '[unused491]', '[unused492]', '[unused493]', '[unused494]', '[unused495]', '[unused496]', '[unused497]', '[unused498]', '[unused499]', '[unused500]', '[unused501]', '[unused502]', '[unused503]', '[unused504]', '[unused505]', '[unused506]', '[unused507]', '[unused508]', '[unused509]', '[unused510]', '[unused511]', '[unused512]', '[unused513]', '[unused514]', '[unused515]', '[unused516]', '[unused517]', '[unused518]', '[unused519]', '[unused520]', '[unused521]', '[unused522]', '[unused523]', '[unused524]', '[unused525]', '[unused526]', '[unused527]', '[unused528]', '[unused529]', '[unused530]', '[unused531]', '[unused532]', '[unused533]', '[unused534]', '[unused535]', '[unused536]', '[unused537]', '[unused538]', '[unused539]', '[unused540]', '[unused541]', '[unused542]', '[unused543]', '[unused544]', '[unused545]', '[unused546]', '[unused547]', '[unused548]', '[unused549]', '[unused550]', '[unused551]', '[unused552]', '[unused553]', '[unused554]', '[unused555]', '[unused556]', '[unused557]', '[unused558]', '[unused559]', '[unused560]', '[unused561]', '[unused562]', '[unused563]', '[unused564]', '[unused565]', '[unused566]', '[unused567]', '[unused568]', '[unused569]', '[unused570]', '[unused571]', '[unused572]', '[unused573]', '[unused574]', '[unused575]', '[unused576]', '[unused577]', '[unused578]', '[unused579]', '[unused580]', '[unused581]', '[unused582]', '[unused583]', '[unused584]', '[unused585]', '[unused586]', '[unused587]', '[unused588]', '[unused589]', '[unused590]', '[unused591]', '[unused592]', '[unused593]', '[unused594]', '[unused595]', '[unused596]', '[unused597]', '[unused598]', '[unused599]', '[unused600]', '[unused601]', '[unused602]', '[unused603]', '[unused604]', '[unused605]', '[unused606]', '[unused607]', '[unused608]', '[unused609]', '[unused610]', '[unused611]', '[unused612]', '[unused613]', '[unused614]', '[unused615]', '[unused616]', '[unused617]', '[unused618]', '[unused619]', '[unused620]', '[unused621]', '[unused622]', '[unused623]', '[unused624]', '[unused625]', '[unused626]', '[unused627]', '[unused628]', '[unused629]', '[unused630]', '[unused631]', '[unused632]', '[unused633]', '[unused634]', '[unused635]', '[unused636]', '[unused637]', '[unused638]', '[unused639]', '[unused640]', '[unused641]', '[unused642]', '[unused643]', '[unused644]', '[unused645]', '[unused646]', '[unused647]', '[unused648]', '[unused649]', '[unused650]', '[unused651]', '[unused652]', '[unused653]', '[unused654]', '[unused655]', '[unused656]', '[unused657]', '[unused658]', '[unused659]', '[unused660]', '[unused661]', '[unused662]', '[unused663]', '[unused664]', '[unused665]', '[unused666]', '[unused667]', '[unused668]', '[unused669]', '[unused670]', '[unused671]', '[unused672]', '[unused673]', '[unused674]', '[unused675]', '[unused676]', '[unused677]', '[unused678]', '[unused679]', '[unused680]', '[unused681]', '[unused682]', '[unused683]', '[unused684]', '[unused685]', '[unused686]', '[unused687]', '[unused688]', '[unused689]', '[unused690]', '[unused691]', '[unused692]', '[unused693]', '[unused694]', '[unused695]', '[unused696]', '[unused697]', '[unused698]', '[unused699]', '[unused700]', '[unused701]', '[unused702]', '[unused703]', '[unused704]', '[unused705]', '[unused706]', '[unused707]', '[unused708]', '[unused709]', '[unused710]', '[unused711]', '[unused712]', '[unused713]', '[unused714]', '[unused715]', '[unused716]', '[unused717]', '[unused718]', '[unused719]', '[unused720]', '[unused721]', '[unused722]', '[unused723]', '[unused724]', '[unused725]', '[unused726]', '[unused727]', '[unused728]', '[unused729]', '[unused730]', '[unused731]', '[unused732]', '[unused733]', '[unused734]', '[unused735]', '[unused736]', '[unused737]', '[unused738]', '[unused739]', '[unused740]', '[unused741]', '[unused742]', '[unused743]', '[unused744]', '[unused745]', '[unused746]', '[unused747]', '[unused748]', '[unused749]', '[unused750]', '[unused751]', '[unused752]', '[unused753]', '[unused754]', '[unused755]', '[unused756]', '[unused757]', '[unused758]', '[unused759]', '[unused760]', '[unused761]', '[unused762]', '[unused763]', '[unused764]', '[unused765]', '[unused766]', '[unused767]', '[unused768]', '[unused769]', '[unused770]', '[unused771]', '[unused772]', '[unused773]', '[unused774]', '[unused775]', '[unused776]', '[unused777]', '[unused778]', '[unused779]', '[unused780]', '[unused781]', '[unused782]', '[unused783]', '[unused784]', '[unused785]', '[unused786]', '[unused787]', '[unused788]', '[unused789]', '[unused790]', '[unused791]', '[unused792]', '[unused793]', '[unused794]', '[unused795]', '[unused796]', '[unused797]', '[unused798]', '[unused799]', '[unused800]', '[unused801]', '[unused802]', '[unused803]', '[unused804]', '[unused805]', '[unused806]', '[unused807]', '[unused808]', '[unused809]', '[unused810]', '[unused811]', '[unused812]', '[unused813]', '[unused814]', '[unused815]', '[unused816]', '[unused817]', '[unused818]', '[unused819]', '[unused820]', '[unused821]', '[unused822]', '[unused823]', '[unused824]', '[unused825]', '[unused826]', '[unused827]', '[unused828]', '[unused829]', '[unused830]', '[unused831]', '[unused832]', '[unused833]', '[unused834]', '[unused835]', '[unused836]', '[unused837]', '[unused838]', '[unused839]', '[unused840]', '[unused841]', '[unused842]', '[unused843]', '[unused844]', '[unused845]', '[unused846]', '[unused847]', '[unused848]', '[unused849]', '[unused850]', '[unused851]', '[unused852]', '[unused853]', '[unused854]', '[unused855]', '[unused856]', '[unused857]', '[unused858]', '[unused859]', '[unused860]', '[unused861]', '[unused862]', '[unused863]', '[unused864]', '[unused865]', '[unused866]', '[unused867]', '[unused868]', '[unused869]', '[unused870]', '[unused871]', '[unused872]', '[unused873]', '[unused874]', '[unused875]', '[unused876]', '[unused877]', '[unused878]', '[unused879]', '[unused880]', '[unused881]', '[unused882]', '[unused883]', '[unused884]', '[unused885]', '[unused886]', '[unused887]', '[unused888]', '[unused889]', '[unused890]', '[unused891]', '[unused892]', '[unused893]', '[unused894]', '[unused895]', '[unused896]', '[unused897]', '[unused898]', '[unused899]', '[unused900]', '[unused901]', '[unused902]', '[unused903]', '[unused904]', '[unused905]', '[unused906]', '[unused907]', '[unused908]', '[unused909]', '[unused910]', '[unused911]', '[unused912]', '[unused913]', '[unused914]', '[unused915]', '[unused916]', '[unused917]', '[unused918]', '[unused919]', '[unused920]', '[unused921]', '[unused922]', '[unused923]', '[unused924]', '[unused925]', '[unused926]', '[unused927]', '[unused928]', '[unused929]', '[unused930]', '[unused931]', '[unused932]', '[unused933]', '[unused934]', '[unused935]', '[unused936]', '[unused937]', '[unused938]', '[unused939]', '[unused940]', '[unused941]', '[unused942]', '[unused943]', '[unused944]', '[unused945]', '[unused946]', '[unused947]', '[unused948]', '[unused949]', '[unused950]', '[unused951]', '[unused952]', '[unused953]', '[unused954]', '[unused955]', '[unused956]', '[unused957]', '[unused958]', '[unused959]', '[unused960]', '[unused961]', '[unused962]', '[unused963]', '[unused964]', '[unused965]', '[unused966]', '[unused967]', '[unused968]', '[unused969]', '[unused970]', '[unused971]', '[unused972]', '[unused973]', '[unused974]', '[unused975]', '[unused976]', '[unused977]', '[unused978]', '[unused979]', '[unused980]', '[unused981]', '[unused982]', '[unused983]', '[unused984]', '[unused985]', '[unused986]', '[unused987]', '[unused988]', '[unused989]', '[unused990]', '[unused991]', '[unused992]', '[unused993]'], unused_list_ids=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998], unused_list_ids_set={1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891, 892, 893, 894, 895, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998}, warmup_steps=0, weight_decay=0.0)
+12/04/2023 10:11:51 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:11:51 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:11:51 - INFO - __main__ -     Batch size = 16
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]Evaluating: 100%|██████████| 1/1 [00:01<00:00,  1.30s/it]Evaluating: 100%|██████████| 1/1 [00:01<00:00,  1.30s/it]
+12/04/2023 10:11:53 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:11:53 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:11:53 - INFO - __main__ -     Batch size = 16
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]Evaluating: 100%|██████████| 1/1 [00:00<00:00, 35.38it/s]
+12/04/2023 10:11:53 - INFO - __main__ -   epoch: -1
+12/04/2023 10:11:53 - INFO - __main__ -   all_diff: 0.75
+12/04/2023 10:11:53 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:11:53 - INFO - __main__ -   ctg1_diff: 0.5
+/home/soahmed/anaconda3/envs/cxg/lib/python3.8/site-packages/transformers/optimization.py:411: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+12/04/2023 10:11:53 - INFO - __main__ -   ***** Running training *****
+12/04/2023 10:11:53 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:11:53 - INFO - __main__ -     Num Epochs = 70
+12/04/2023 10:11:53 - INFO - __main__ -     Instantaneous batch size per GPU = 4
+12/04/2023 10:11:53 - INFO - __main__ -     Total train batch size (w. parallel, distributed & accumulation) = 4
+12/04/2023 10:11:53 - INFO - __main__ -     Gradient Accumulation steps = 1
+12/04/2023 10:11:53 - INFO - __main__ -     Total optimization steps = 70
+Not freezing embeddings weight parameter bert.embeddings.word_embeddings.weight of size torch.Size([30522, 768])
+TRAIN DATASET: [('this is a [unused1].', '[unused1]'), ('she [unused2] at the crowd.', '[unused2]')]
+Epoch:   0%|          | 0/70 [00:00<?, ?it/s]12/04/2023 10:11:53 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:11:53 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:11:53 - INFO - __main__ -     Batch size = 16
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 32.67it/s]
+12/04/2023 10:11:53 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:11:53 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:11:53 - INFO - __main__ -     Batch size = 16
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 35.38it/s]
+12/04/2023 10:11:53 - INFO - __main__ -   epoch: -1
+12/04/2023 10:11:53 - INFO - __main__ -   all_diff: 0.75
+12/04/2023 10:11:53 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:11:53 - INFO - __main__ -   ctg1_diff: 0.5
+12/04/2023 10:11:54 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint--1
+TRAIN STIMULI: [('this is a [unused1].', '[unused1]'), ('she [unused2] at the crowd.', '[unused2]')]
+STIMULI NUMBERS:
+ STIMULI NUMBER: 2
+_dev_cat0 STIMULI NUMBER: 2
+_dev_cat1 STIMULI NUMBER: 2
+TOKEN IDS TENSOR: tensor([2, 3], device='cuda:0')
+TOKENIZED: {'input_ids': tensor([ 101, 2016,    3, 2012, 1996, 4306, 1012,  102]), 'token_type_ids': tensor([0, 0, 0, 0, 0, 0, 0, 0]), 'attention_mask': tensor([1, 1, 1, 1, 1, 1, 1, 1])}
+
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:11:55 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:11:55 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:11:55 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003, 1037,    2, 1012,  102,    0],
+        [ 101, 2016,    3, 2012, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = nan
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 39.03it/s]
+12/04/2023 10:11:55 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:11:55 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:11:55 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 45.52it/s]
+12/04/2023 10:11:55 - INFO - __main__ -   epoch: 0
+12/04/2023 10:11:55 - INFO - __main__ -   all_diff: 0.75
+12/04/2023 10:11:55 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:11:55 - INFO - __main__ -   ctg1_diff: 0.5
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  1.96it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  1.96it/s]
+12/04/2023 10:11:55 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-0
+Epoch:   1%|▏         | 1/70 [00:02<03:10,  2.76s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:11:56 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:11:56 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:11:56 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101,  103,    3, 2012, 1996, 4306,  103,  102],
+        [ 101, 2023, 2003,  103,    2, 1012,  102,    0]], device='cuda:0')
+labels: tensor([[-100, 2016, -100, -100, -100, -100, 1012, -100],
+        [-100, -100, -100, 1037, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = 1.201488971710205
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 45.91it/s]
+12/04/2023 10:11:56 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:11:56 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:11:56 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.68it/s]
+12/04/2023 10:11:56 - INFO - __main__ -   epoch: 1
+12/04/2023 10:11:56 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:11:56 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:11:56 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s]
+12/04/2023 10:11:57 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-1
+Epoch:   3%|▎         | 2/70 [00:04<02:10,  1.92s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:11:57 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:11:57 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:11:57 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101, 2016,  103, 2012, 1996, 4306, 1012,  102],
+        [ 101, 2023, 2003, 1037,    2, 1012,  102,    0]], device='cuda:0')
+labels: tensor([[-100, -100,    3, -100, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = 15.525247573852539
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.69it/s]
+12/04/2023 10:11:57 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:11:57 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:11:57 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.81it/s]
+12/04/2023 10:11:57 - INFO - __main__ -   epoch: 2
+12/04/2023 10:11:57 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:11:57 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:11:57 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.09it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.08it/s]
+12/04/2023 10:11:58 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-2
+Epoch:   4%|▍         | 3/70 [00:05<01:49,  1.63s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:11:58 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:11:58 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:11:58 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101,  103,    3, 2012, 1996, 4306, 1012,  102],
+        [ 101, 2023, 2003, 1037,    2, 1012,  102,    0]], device='cuda:0')
+labels: tensor([[-100, 2016, -100, -100, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = 1.679105281829834
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.05it/s]
+12/04/2023 10:11:58 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:11:58 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:11:58 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.92it/s]
+12/04/2023 10:11:58 - INFO - __main__ -   epoch: 3
+12/04/2023 10:11:58 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:11:58 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:11:58 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+12/04/2023 10:11:59 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-3
+Epoch:   6%|▌         | 4/70 [00:06<01:39,  1.51s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:00 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:00 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:00 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003, 1037,    2, 1012,  102,    0],
+        [ 101, 2016,  103, 2012, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, -100,    3, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 14.714274406433105
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 42.46it/s]
+12/04/2023 10:12:00 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:00 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:00 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 48.09it/s]
+12/04/2023 10:12:00 - INFO - __main__ -   epoch: 4
+12/04/2023 10:12:00 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:00 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:00 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+12/04/2023 10:12:01 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-4
+Epoch:   7%|▋         | 5/70 [00:08<01:33,  1.44s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:01 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:01 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:01 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101, 2016,  103, 2012, 1996, 4306, 1012,  102],
+        [ 101, 2023, 2003, 1037,    2,  103,  102,    0]], device='cuda:0')
+labels: tensor([[-100, -100,    3, -100, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, 1012, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = 7.011161804199219
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.67it/s]
+12/04/2023 10:12:01 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:01 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:01 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.64it/s]
+12/04/2023 10:12:01 - INFO - __main__ -   epoch: 5
+12/04/2023 10:12:01 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:01 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:01 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s]
+12/04/2023 10:12:02 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-5
+Epoch:   9%|▊         | 6/70 [00:09<01:29,  1.40s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:02 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:02 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:02 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101, 2016,  103, 2012, 1996, 4306, 1012,  102],
+        [ 101,  103, 2003, 1037,    2, 1012,  102,    0]], device='cuda:0')
+labels: tensor([[-100, -100,    3, -100, -100, -100, -100, -100],
+        [-100, 2023, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = 9.167590141296387
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.64it/s]
+12/04/2023 10:12:02 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:02 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:02 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.93it/s]
+12/04/2023 10:12:02 - INFO - __main__ -   epoch: 6
+12/04/2023 10:12:02 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:02 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:02 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s]
+12/04/2023 10:12:03 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-6
+Epoch:  10%|█         | 7/70 [00:10<01:26,  1.37s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:04 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:04 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:04 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101, 2016,    3,  103,  103, 4306, 1012,  102],
+        [ 101,  103, 2003, 1037,    2,  103,  102,    0]], device='cuda:0')
+labels: tensor([[-100, -100, -100, 2012, 1996, -100, -100, -100],
+        [-100, 2023, -100, -100, -100, 1012, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = 1.3493729829788208
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.74it/s]
+12/04/2023 10:12:04 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:04 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:04 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 48.00it/s]
+12/04/2023 10:12:04 - INFO - __main__ -   epoch: 7
+12/04/2023 10:12:04 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:04 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:04 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s]
+12/04/2023 10:12:05 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-7
+Epoch:  11%|█▏        | 8/70 [00:11<01:24,  1.36s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:05 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:05 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:05 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101, 2016,    3, 2012, 1996, 4306, 1012,  102],
+        [ 101, 2023, 2003, 1037,    2, 1012,  102,    0]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = nan
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.29it/s]
+12/04/2023 10:12:05 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:05 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:05 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.87it/s]
+12/04/2023 10:12:05 - INFO - __main__ -   epoch: 8
+12/04/2023 10:12:05 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:05 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:05 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+12/04/2023 10:12:06 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-8
+Epoch:  13%|█▎        | 9/70 [00:13<01:22,  1.35s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:06 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:06 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:06 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003, 1037,  103, 1012,  102,    0],
+        [ 101, 2016,    3, 2012,  103,  103, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100,    2, -100, -100, -100],
+        [-100, -100, -100, -100, 1996, 4306, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 7.273263454437256
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 41.42it/s]
+12/04/2023 10:12:06 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:06 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:06 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.92it/s]
+12/04/2023 10:12:06 - INFO - __main__ -   epoch: 9
+12/04/2023 10:12:06 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:06 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:06 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s]
+12/04/2023 10:12:07 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-9
+Epoch:  14%|█▍        | 10/70 [00:14<01:20,  1.34s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:08 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:08 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:08 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003, 1037,    2, 1012,  102,    0],
+        [ 101,  103,    3, 2012, 2854, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, 2016, -100, -100, 1996, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 3.2839934825897217
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 41.43it/s]
+12/04/2023 10:12:08 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:08 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:08 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.70it/s]
+12/04/2023 10:12:08 - INFO - __main__ -   epoch: 10
+12/04/2023 10:12:08 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:08 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:08 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.07it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.07it/s]
+12/04/2023 10:12:09 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-10
+Epoch:  16%|█▌        | 11/70 [00:15<01:18,  1.33s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:09 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:09 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:09 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003, 1037,    2, 1012,  102,    0],
+        [ 101, 2016,    3, 2012, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = nan
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.84it/s]
+12/04/2023 10:12:09 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:09 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:09 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.66it/s]
+12/04/2023 10:12:09 - INFO - __main__ -   epoch: 11
+12/04/2023 10:12:09 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:09 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:09 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+12/04/2023 10:12:10 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-11
+Epoch:  17%|█▋        | 12/70 [00:17<01:16,  1.32s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:10 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:10 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:10 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003, 1037,  103, 1012,  102,    0],
+        [ 101, 2016,    3, 2012, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100,    2, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 14.239483833312988
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.29it/s]
+12/04/2023 10:12:10 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:10 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:10 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 48.04it/s]
+12/04/2023 10:12:10 - INFO - __main__ -   epoch: 12
+12/04/2023 10:12:10 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:10 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:10 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+12/04/2023 10:12:11 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-12
+Epoch:  19%|█▊        | 13/70 [00:18<01:14,  1.32s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:12 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:12 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:12 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[  101,  2023,   103,  1037,     2,  1012,   102,     0],
+        [  101,  2016, 11184,  2012,  1996,  4306,  1012,   102]],
+       device='cuda:0')
+labels: tensor([[-100, -100, 2003, -100, -100, -100, -100, -100],
+        [-100, -100,    3, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 5.809828281402588
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.52it/s]
+12/04/2023 10:12:12 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:12 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:12 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.81it/s]
+12/04/2023 10:12:12 - INFO - __main__ -   epoch: 13
+12/04/2023 10:12:12 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:12 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:12 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s]
+12/04/2023 10:12:12 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-13
+Epoch:  20%|██        | 14/70 [00:19<01:13,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:13 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:13 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:13 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101,  103, 2003,  103,  103, 1012,  102,    0],
+        [ 101, 2016,    3, 2012, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, 2023, -100, 1037,    2, -100, -100, -100],
+        [-100, -100, -100, -100, 1996, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 4.409450531005859
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.54it/s]
+12/04/2023 10:12:13 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:13 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:13 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.86it/s]
+12/04/2023 10:12:13 - INFO - __main__ -   epoch: 14
+12/04/2023 10:12:13 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:13 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:13 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.07it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.07it/s]
+12/04/2023 10:12:14 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-14
+Epoch:  21%|██▏       | 15/70 [00:21<01:12,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:14 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:14 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:14 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[  101,  2016,     3,  2012, 11150,   103,  1012,   102],
+        [  101,  2023,  2003,  1037,     2,  1012,   102,     0]],
+       device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, 1996, 4306, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = 6.282083511352539
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.21it/s]
+12/04/2023 10:12:14 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:14 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:14 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 48.06it/s]
+12/04/2023 10:12:14 - INFO - __main__ -   epoch: 15
+12/04/2023 10:12:14 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:14 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:14 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+12/04/2023 10:12:15 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-15
+Epoch:  23%|██▎       | 16/70 [00:22<01:10,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:15 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:15 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:15 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101, 2016,    3, 2012, 1996, 4306,  103,  102],
+        [ 101,  103, 2003, 1037,    2, 1012,  102,    0]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, 1012, -100],
+        [-100, 2023, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = 3.0766563415527344
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 42.98it/s]
+12/04/2023 10:12:16 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:16 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:16 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.74it/s]
+12/04/2023 10:12:16 - INFO - __main__ -   epoch: 16
+12/04/2023 10:12:16 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:16 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:16 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s]
+12/04/2023 10:12:16 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-16
+Epoch:  24%|██▍       | 17/70 [00:23<01:09,  1.32s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:17 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:17 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:17 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003, 1037,    2, 1012,  102,    0],
+        [ 101, 2016,    3,  103, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, -100, -100, 2012, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 0.9526110887527466
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 41.54it/s]
+12/04/2023 10:12:17 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:17 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:17 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 48.14it/s]
+12/04/2023 10:12:17 - INFO - __main__ -   epoch: 17
+12/04/2023 10:12:17 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:17 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:17 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s]
+12/04/2023 10:12:18 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-17
+Epoch:  26%|██▌       | 18/70 [00:25<01:08,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:18 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:18 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:18 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101, 2016,    3, 2012, 1996, 4306, 1012,  102],
+        [ 101, 2023, 2003, 1037,    2, 1012,  102,    0]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = nan
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 41.18it/s]
+12/04/2023 10:12:18 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:18 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:18 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.80it/s]
+12/04/2023 10:12:18 - INFO - __main__ -   epoch: 18
+12/04/2023 10:12:18 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:18 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:18 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+12/04/2023 10:12:19 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-18
+Epoch:  27%|██▋       | 19/70 [00:26<01:06,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:19 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:19 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:19 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003, 1037,    2, 1012,  102,    0],
+        [ 101,  103,    3, 2012, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, 2016, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 1.2629528045654297
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 42.19it/s]
+12/04/2023 10:12:19 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:19 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:19 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.63it/s]
+12/04/2023 10:12:19 - INFO - __main__ -   epoch: 19
+12/04/2023 10:12:19 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:19 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:19 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s]
+12/04/2023 10:12:20 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-19
+Epoch:  29%|██▊       | 20/70 [00:27<01:05,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:21 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:21 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:21 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003, 1037,    2, 1012,  102,    0],
+        [ 101,  103,    3,  103, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, 2016, -100, 2012, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 1.056275486946106
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.67it/s]
+12/04/2023 10:12:21 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:21 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:21 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 48.07it/s]
+12/04/2023 10:12:21 - INFO - __main__ -   epoch: 20
+12/04/2023 10:12:21 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:21 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:21 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+12/04/2023 10:12:22 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-20
+Epoch:  30%|███       | 21/70 [00:29<01:05,  1.33s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:22 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:22 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:22 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[  101,  2016, 21985,  2012,  1996,  4306,  1012,   102],
+        [  101,  2023,  2003,  1037,     2,  1012,   102,     0]],
+       device='cuda:0')
+labels: tensor([[-100, -100,    3, -100, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = 12.671058654785156
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 41.45it/s]
+12/04/2023 10:12:22 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:22 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:22 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.69it/s]
+12/04/2023 10:12:22 - INFO - __main__ -   epoch: 21
+12/04/2023 10:12:22 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:22 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:22 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+12/04/2023 10:12:23 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-21
+Epoch:  31%|███▏      | 22/70 [00:30<01:03,  1.32s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:23 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:23 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:23 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101, 2016,    3, 2012, 1996, 4306, 1012,  102],
+        [ 101, 2023, 2003, 1037,    2, 1012,  102,    0]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = nan
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 41.34it/s]
+12/04/2023 10:12:23 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:23 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:23 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.70it/s]
+12/04/2023 10:12:23 - INFO - __main__ -   epoch: 22
+12/04/2023 10:12:23 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:23 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:23 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s]
+12/04/2023 10:12:24 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-22
+Epoch:  33%|███▎      | 23/70 [00:31<01:02,  1.32s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:25 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:25 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:25 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101, 2016,    3, 2012, 1996, 4306,  103,  102],
+        [ 101, 2023, 2003, 1037,    2, 1012,  102,    0]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, 1012, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = 0.005845712497830391
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.12it/s]
+12/04/2023 10:12:25 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:25 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:25 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.19it/s]
+12/04/2023 10:12:25 - INFO - __main__ -   epoch: 23
+12/04/2023 10:12:25 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:25 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:25 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.03it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.03it/s]
+12/04/2023 10:12:26 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-23
+Epoch:  34%|███▍      | 24/70 [00:33<01:00,  1.32s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:26 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:26 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:26 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101,  103,    3,  103, 1996,  103,  103,  102],
+        [ 101, 2023, 2003, 1037,    2, 1012,  102,    0]], device='cuda:0')
+labels: tensor([[-100, 2016, -100, 2012, -100, 4306, 1012, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = 1.3885953426361084
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.48it/s]
+12/04/2023 10:12:26 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:26 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:26 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 48.12it/s]
+12/04/2023 10:12:26 - INFO - __main__ -   epoch: 24
+12/04/2023 10:12:26 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:26 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:26 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s]
+12/04/2023 10:12:27 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-24
+Epoch:  36%|███▌      | 25/70 [00:34<00:59,  1.33s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:27 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:27 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:27 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101, 2016,    3, 2012, 1996,  103, 1012,  102],
+        [ 101, 2023, 2003, 1037,    2, 1012,  102,    0]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, 4306, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = 6.556382179260254
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 42.50it/s]
+12/04/2023 10:12:27 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:27 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:27 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.98it/s]
+12/04/2023 10:12:27 - INFO - __main__ -   epoch: 25
+12/04/2023 10:12:27 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:27 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:27 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.07it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+12/04/2023 10:12:28 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-25
+Epoch:  37%|███▋      | 26/70 [00:35<00:57,  1.32s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:29 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:29 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:29 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003, 1037,    2, 1012,  102,    0],
+        [ 101, 2016,    3,  103, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, -100, -100, 2012, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 0.4371106028556824
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 41.04it/s]
+12/04/2023 10:12:29 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:29 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:29 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.92it/s]
+12/04/2023 10:12:29 - INFO - __main__ -   epoch: 26
+12/04/2023 10:12:29 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:29 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:29 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s]
+12/04/2023 10:12:30 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-26
+Epoch:  39%|███▊      | 27/70 [00:36<00:56,  1.32s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:30 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:30 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:30 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101, 2016,    3, 2012, 1996, 4306, 1012,  102],
+        [ 101, 2023,  103, 1037,    2, 1012,  102,    0]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, -100, 2003, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = 0.4033614695072174
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.19it/s]
+12/04/2023 10:12:30 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:30 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:30 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.99it/s]
+12/04/2023 10:12:30 - INFO - __main__ -   epoch: 27
+12/04/2023 10:12:30 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:30 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:30 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s]
+12/04/2023 10:12:31 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-27
+Epoch:  40%|████      | 28/70 [00:38<00:55,  1.32s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:31 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:31 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:31 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003, 1037,    2, 1012,  102,    0],
+        [ 101, 2016,    3, 2012, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = nan
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 41.06it/s]
+12/04/2023 10:12:31 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:31 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:31 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.91it/s]
+12/04/2023 10:12:31 - INFO - __main__ -   epoch: 28
+12/04/2023 10:12:31 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:31 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:31 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s]
+12/04/2023 10:12:32 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-28
+Epoch:  41%|████▏     | 29/70 [00:39<00:54,  1.32s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:33 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:33 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:33 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101, 2016,    3, 2012, 1996, 4306, 1012,  102],
+        [ 101, 2023, 2003, 1037,    2, 1012,  102,    0]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = nan
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.19it/s]
+12/04/2023 10:12:33 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:33 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:33 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.51it/s]
+12/04/2023 10:12:33 - INFO - __main__ -   epoch: 29
+12/04/2023 10:12:33 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:33 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:33 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+12/04/2023 10:12:34 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-29
+Epoch:  43%|████▎     | 30/70 [00:40<00:52,  1.32s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:34 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:34 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:34 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101,  103, 2003, 1037,    2, 1012,  102,    0],
+        [ 101, 2016,    3, 2012, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, 2023, -100, -100, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 2.917586088180542
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.43it/s]
+12/04/2023 10:12:34 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:34 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:34 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.92it/s]
+12/04/2023 10:12:34 - INFO - __main__ -   epoch: 30
+12/04/2023 10:12:34 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:34 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:34 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+12/04/2023 10:12:35 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-30
+Epoch:  44%|████▍     | 31/70 [00:42<00:51,  1.32s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:35 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:35 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:35 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003, 1037,    2, 1012,  102,    0],
+        [ 101, 2016,    3, 2012, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = nan
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.44it/s]
+12/04/2023 10:12:35 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:35 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:35 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.57it/s]
+12/04/2023 10:12:35 - INFO - __main__ -   epoch: 31
+12/04/2023 10:12:35 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:35 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:35 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s]
+12/04/2023 10:12:36 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-31
+Epoch:  46%|████▌     | 32/70 [00:43<00:49,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:37 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:37 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:37 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101, 2016,    3, 2012,  103, 4306, 1012,  102],
+        [ 101, 2023, 2003, 1037,    2, 1012,  102,    0]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, 1996, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = 0.008889976888895035
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.16it/s]
+12/04/2023 10:12:37 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:37 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:37 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.84it/s]
+12/04/2023 10:12:37 - INFO - __main__ -   epoch: 32
+12/04/2023 10:12:37 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:37 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:37 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.07it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.07it/s]
+12/04/2023 10:12:37 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-32
+Epoch:  47%|████▋     | 33/70 [00:44<00:48,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:38 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:38 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:38 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[  101,   103,  2003,  1037,     2,  1012,   102,     0],
+        [  101,  2016,     3,  2012,  1996,  4306, 15008,   102]],
+       device='cuda:0')
+labels: tensor([[-100, 2023, -100, -100, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, 1012, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 1.2642298936843872
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.09it/s]
+12/04/2023 10:12:38 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:38 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:38 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.91it/s]
+12/04/2023 10:12:38 - INFO - __main__ -   epoch: 33
+12/04/2023 10:12:38 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:38 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:38 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.03it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.03it/s]
+12/04/2023 10:12:39 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-33
+Epoch:  49%|████▊     | 34/70 [00:46<00:47,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:39 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:39 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:39 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003,  103,    2, 1012,  102,    0],
+        [ 101, 2016,    3, 2012, 1996, 4306,  103,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, 1037, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, 1012, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 1.137275218963623
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 41.02it/s]
+12/04/2023 10:12:39 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:39 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:39 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.63it/s]
+12/04/2023 10:12:39 - INFO - __main__ -   epoch: 34
+12/04/2023 10:12:39 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:39 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:39 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s]
+12/04/2023 10:12:40 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-34
+Epoch:  50%|█████     | 35/70 [00:47<00:45,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:41 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:41 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:41 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003, 1037,    2, 1012,  102,    0],
+        [ 101, 2016,    3, 2012, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = nan
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.65it/s]
+12/04/2023 10:12:41 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:41 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:41 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 48.08it/s]
+12/04/2023 10:12:41 - INFO - __main__ -   epoch: 35
+12/04/2023 10:12:41 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:41 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:41 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s]
+12/04/2023 10:12:41 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-35
+Epoch:  51%|█████▏    | 36/70 [00:48<00:44,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:42 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:42 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:42 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003, 1037,    2, 1012,  102,    0],
+        [ 101, 3104,    3, 2012, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, 2016, -100, -100, -100, -100, 1012, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 2.02669620513916
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 39.51it/s]
+12/04/2023 10:12:42 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:42 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:42 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.95it/s]
+12/04/2023 10:12:42 - INFO - __main__ -   epoch: 36
+12/04/2023 10:12:42 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:42 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:42 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s]
+12/04/2023 10:12:43 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-36
+Epoch:  53%|█████▎    | 37/70 [00:50<00:43,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:43 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:43 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:43 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101,  103, 2003, 1037,    2, 1012,  102,    0],
+        [ 101, 2016,    3,  103, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, 2023, -100, -100, -100, -100, -100, -100],
+        [-100, -100, -100, 2012, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 1.7988258600234985
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 42.09it/s]
+12/04/2023 10:12:43 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:43 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:43 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.36it/s]
+12/04/2023 10:12:43 - INFO - __main__ -   epoch: 37
+12/04/2023 10:12:43 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:43 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:43 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s]
+12/04/2023 10:12:44 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-37
+Epoch:  54%|█████▍    | 38/70 [00:51<00:41,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:44 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:44 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:44 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003, 1037,    2, 1012,  102,    0],
+        [ 101, 2016,    3, 2012, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = nan
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.74it/s]
+12/04/2023 10:12:44 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:44 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:44 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.65it/s]
+12/04/2023 10:12:45 - INFO - __main__ -   epoch: 38
+12/04/2023 10:12:45 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:45 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:45 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s]
+12/04/2023 10:12:45 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-38
+Epoch:  56%|█████▌    | 39/70 [00:52<00:40,  1.30s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:46 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:46 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:46 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003, 1037,    2, 1012,  102,    0],
+        [ 101, 2016,    3, 2012, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, 2016, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 0.6584590673446655
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.12it/s]
+12/04/2023 10:12:46 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:46 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:46 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.88it/s]
+12/04/2023 10:12:46 - INFO - __main__ -   epoch: 39
+12/04/2023 10:12:46 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:46 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:46 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+12/04/2023 10:12:47 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-39
+Epoch:  57%|█████▋    | 40/70 [00:54<00:39,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:47 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:47 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:47 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101, 2016,    3, 2012, 1996, 4306, 1012,  102],
+        [ 101, 2023, 2003,  103,    2, 1012,  102,    0]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, -100, -100, 1037, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = 1.477247714996338
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 41.27it/s]
+12/04/2023 10:12:47 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:47 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:47 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.82it/s]
+12/04/2023 10:12:47 - INFO - __main__ -   epoch: 40
+12/04/2023 10:12:47 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:47 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:47 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s]
+12/04/2023 10:12:48 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-40
+Epoch:  59%|█████▊    | 41/70 [00:55<00:37,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:48 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:48 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:48 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101,  103,  103, 1037,    2, 1012,  102,    0],
+        [ 101, 2016,    3, 2012, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, 2023, 2003, -100, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 3.1049323081970215
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 39.64it/s]
+12/04/2023 10:12:48 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:48 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:48 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.89it/s]
+12/04/2023 10:12:48 - INFO - __main__ -   epoch: 41
+12/04/2023 10:12:48 - INFO - __main__ -   all_diff: 0.75
+12/04/2023 10:12:48 - INFO - __main__ -   ctg0_diff: 0.5
+12/04/2023 10:12:48 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+12/04/2023 10:12:49 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-41
+Epoch:  60%|██████    | 42/70 [00:56<00:36,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:50 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:50 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:50 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003, 1037,    2,  103,  102,    0],
+        [ 101, 2016,    3, 2012, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, 1012, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 0.15891605615615845
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.81it/s]
+12/04/2023 10:12:50 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:50 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:50 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.80it/s]
+12/04/2023 10:12:50 - INFO - __main__ -   epoch: 42
+12/04/2023 10:12:50 - INFO - __main__ -   all_diff: 0.75
+12/04/2023 10:12:50 - INFO - __main__ -   ctg0_diff: 0.5
+12/04/2023 10:12:50 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s]
+12/04/2023 10:12:51 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-42
+Epoch:  61%|██████▏   | 43/70 [00:57<00:35,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:51 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:51 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:51 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101, 2016,    3, 2012, 1996, 4306, 1012,  102],
+        [ 101, 2023, 2003, 1037,  103, 1012,  102,    0]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, -100, -100, -100,    2, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = 10.576991081237793
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 46.70it/s]
+12/04/2023 10:12:51 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:51 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:51 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 48.00it/s]
+12/04/2023 10:12:51 - INFO - __main__ -   epoch: 43
+12/04/2023 10:12:51 - INFO - __main__ -   all_diff: 0.75
+12/04/2023 10:12:51 - INFO - __main__ -   ctg0_diff: 0.5
+12/04/2023 10:12:51 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s]
+12/04/2023 10:12:52 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-43
+Epoch:  63%|██████▎   | 44/70 [00:59<00:34,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:52 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:52 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:52 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003, 1037,  103, 1012,  102,    0],
+        [ 101, 2016,    3, 2012,  103, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100,    2, -100, -100, -100],
+        [-100, -100, -100, -100, 1996, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 5.162792205810547
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.84it/s]
+12/04/2023 10:12:52 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:52 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:52 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.79it/s]
+12/04/2023 10:12:52 - INFO - __main__ -   epoch: 44
+12/04/2023 10:12:52 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:52 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:52 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+12/04/2023 10:12:53 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-44
+Epoch:  64%|██████▍   | 45/70 [01:00<00:32,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:54 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:54 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:54 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101, 2016,    3, 2012, 1996,  103,  103,  102],
+        [ 101, 2023, 2003, 1037,    2, 1012,  102,    0]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, 4306, 1012, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = 2.779865264892578
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.76it/s]
+12/04/2023 10:12:54 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:54 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:54 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.67it/s]
+12/04/2023 10:12:54 - INFO - __main__ -   epoch: 45
+12/04/2023 10:12:54 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:54 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:54 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s]
+12/04/2023 10:12:55 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-45
+Epoch:  66%|██████▌   | 46/70 [01:01<00:31,  1.32s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:55 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:55 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:55 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023,  103, 1037,    2, 1012,  102,    0],
+        [ 101, 2016,  103, 2012, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, 2003, -100, -100, -100, -100, -100],
+        [-100, -100,    3, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 2.7566077709198
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 41.56it/s]
+12/04/2023 10:12:55 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:55 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:55 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.64it/s]
+12/04/2023 10:12:55 - INFO - __main__ -   epoch: 46
+12/04/2023 10:12:55 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:55 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:55 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.07it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+12/04/2023 10:12:56 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-46
+Epoch:  67%|██████▋   | 47/70 [01:03<00:30,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:56 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:56 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:56 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003, 1037,    2,  103,  102,    0],
+        [ 101, 2016,    3, 2012, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, 1012, -100, -100],
+        [-100, -100, -100, -100, -100, 4306, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 0.06990745663642883
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.76it/s]
+12/04/2023 10:12:56 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:56 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:56 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.84it/s]
+12/04/2023 10:12:56 - INFO - __main__ -   epoch: 47
+12/04/2023 10:12:56 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:56 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:56 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s]
+12/04/2023 10:12:57 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-47
+Epoch:  69%|██████▊   | 48/70 [01:04<00:28,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:58 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:58 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:58 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101, 2016,  103,  103, 1996, 4306, 1012,  102],
+        [ 101, 2023,  103, 1037,    2,  103,  102,    0]], device='cuda:0')
+labels: tensor([[-100, -100,    3, 2012, -100, -100, -100, -100],
+        [-100, -100, 2003, -100, -100, 1012, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = 1.6875238418579102
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.70it/s]
+12/04/2023 10:12:58 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:58 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:58 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.79it/s]
+12/04/2023 10:12:58 - INFO - __main__ -   epoch: 48
+12/04/2023 10:12:58 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:58 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:58 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s]
+12/04/2023 10:12:58 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-48
+Epoch:  70%|███████   | 49/70 [01:05<00:27,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:12:59 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:12:59 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:59 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101,  103,    3, 2012, 1996, 4306, 1012,  102],
+        [ 101, 2023, 2003, 1037,    2, 1012,  102,    0]], device='cuda:0')
+labels: tensor([[-100, 2016, -100, -100, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = 1.036123514175415
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.62it/s]
+12/04/2023 10:12:59 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:12:59 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:12:59 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.48it/s]
+12/04/2023 10:12:59 - INFO - __main__ -   epoch: 49
+12/04/2023 10:12:59 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:12:59 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:12:59 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+12/04/2023 10:13:00 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-49
+Epoch:  71%|███████▏  | 50/70 [01:07<00:26,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:13:00 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:13:00 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:00 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003, 1037,    2, 1012,  102,    0],
+        [ 101,  103,    3, 2012, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, 2016, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 0.9616647362709045
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.63it/s]
+12/04/2023 10:13:00 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:13:00 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:00 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.79it/s]
+12/04/2023 10:13:00 - INFO - __main__ -   epoch: 50
+12/04/2023 10:13:00 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:13:00 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:13:00 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.07it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.07it/s]
+12/04/2023 10:13:01 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-50
+Epoch:  73%|███████▎  | 51/70 [01:08<00:24,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:13:01 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:13:01 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:01 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[  101,  2023,  2003, 21645,     2,  1012,   102,     0],
+        [  101,  2016,     3,  2012,  1996,  4306,  1012,   102]],
+       device='cuda:0')
+labels: tensor([[-100, -100, -100, 1037, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 3.4651105403900146
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.63it/s]
+12/04/2023 10:13:02 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:13:02 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:02 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.84it/s]
+12/04/2023 10:13:02 - INFO - __main__ -   epoch: 51
+12/04/2023 10:13:02 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:13:02 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:13:02 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s]
+12/04/2023 10:13:02 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-51
+Epoch:  74%|███████▍  | 52/70 [01:09<00:23,  1.30s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:13:03 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:13:03 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:03 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101, 2016,    3, 2012, 1996, 4306, 1012,  102],
+        [ 101, 2023, 2003, 1037,    2,  103,  102,    0]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, 1012, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = 0.16897305846214294
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 42.04it/s]
+12/04/2023 10:13:03 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:13:03 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:03 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.78it/s]
+12/04/2023 10:13:03 - INFO - __main__ -   epoch: 52
+12/04/2023 10:13:03 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:13:03 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:13:03 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s]
+12/04/2023 10:13:04 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-52
+Epoch:  76%|███████▌  | 53/70 [01:11<00:22,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:13:04 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:13:04 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:04 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023,  103, 1037,    2, 1012,  102,    0],
+        [ 101, 2016,  103, 2012, 1996,  103, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, 2003, -100, -100, -100, -100, -100],
+        [-100, -100,    3, -100, -100, 4306, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 4.325898170471191
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 41.33it/s]
+12/04/2023 10:13:04 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:13:04 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:04 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.85it/s]
+12/04/2023 10:13:04 - INFO - __main__ -   epoch: 53
+12/04/2023 10:13:04 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:13:04 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:13:04 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s]
+12/04/2023 10:13:05 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-53
+Epoch:  77%|███████▋  | 54/70 [01:12<00:20,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:13:05 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:13:05 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:05 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101, 2016,    3, 2012, 1996, 4306, 1012,  102],
+        [ 101, 2023, 2003, 1037,    2, 1012,  102,    0]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = nan
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.95it/s]
+12/04/2023 10:13:05 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:13:05 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:05 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.61it/s]
+12/04/2023 10:13:05 - INFO - __main__ -   epoch: 54
+12/04/2023 10:13:05 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:13:05 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:13:05 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s]
+12/04/2023 10:13:06 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-54
+Epoch:  79%|███████▊  | 55/70 [01:13<00:19,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:13:07 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:13:07 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:07 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003,  103,    2, 1012,  102,    0],
+        [ 101, 2016,    3, 2012, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, 1037,    2, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 5.783014297485352
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 41.84it/s]
+12/04/2023 10:13:07 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:13:07 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:07 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.94it/s]
+12/04/2023 10:13:07 - INFO - __main__ -   epoch: 55
+12/04/2023 10:13:07 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:13:07 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:13:07 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s]
+12/04/2023 10:13:08 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-55
+Epoch:  80%|████████  | 56/70 [01:15<00:18,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:13:08 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:13:08 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:08 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003, 1037,    2, 1012,  102,    0],
+        [ 101, 2016,  103, 2012, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, -100,    3, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 2.6205079555511475
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.18it/s]
+12/04/2023 10:13:08 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:13:08 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:08 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.60it/s]
+12/04/2023 10:13:08 - INFO - __main__ -   epoch: 56
+12/04/2023 10:13:08 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:13:08 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:13:08 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s]
+12/04/2023 10:13:09 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-56
+Epoch:  81%|████████▏ | 57/70 [01:16<00:17,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:13:09 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:13:09 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:09 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003, 1037,    2, 1012,  102,    0],
+        [ 101, 2016,    3, 2012, 1996,  103, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, 4306, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 4.5404157638549805
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.94it/s]
+12/04/2023 10:13:09 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:13:09 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:09 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 48.09it/s]
+12/04/2023 10:13:09 - INFO - __main__ -   epoch: 57
+12/04/2023 10:13:09 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:13:09 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:13:09 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+12/04/2023 10:13:10 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-57
+Epoch:  83%|████████▎ | 58/70 [01:17<00:15,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:13:11 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:13:11 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:11 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101, 2016,    3, 2012,  103, 4306, 1012,  102],
+        [ 101,  103, 2003, 1037,    2, 1012,  102,    0]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, 1996, -100, -100, -100],
+        [-100, 2023, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = 1.2777801752090454
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 41.38it/s]
+12/04/2023 10:13:11 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:13:11 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:11 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.86it/s]
+12/04/2023 10:13:11 - INFO - __main__ -   epoch: 58
+12/04/2023 10:13:11 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:13:11 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:13:11 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s]
+12/04/2023 10:13:12 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-58
+Epoch:  84%|████████▍ | 59/70 [01:18<00:14,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:13:12 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:13:12 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:12 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101, 2016,    3, 2012, 1996, 4306, 1012,  102],
+        [ 101,  103, 2003, 1037,    2, 1012,  102,    0]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, 2023, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = 3.0968739986419678
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 39.97it/s]
+12/04/2023 10:13:12 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:13:12 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:12 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.64it/s]
+12/04/2023 10:13:12 - INFO - __main__ -   epoch: 59
+12/04/2023 10:13:12 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:13:12 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:13:12 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+12/04/2023 10:13:13 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-59
+Epoch:  86%|████████▌ | 60/70 [01:20<00:13,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:13:13 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:13:13 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:13 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101, 2016,  103, 2012, 1996, 4306,  103,  102],
+        [ 101,  103,  103, 1037,    2, 1012,  102,    0]], device='cuda:0')
+labels: tensor([[-100, -100,    3, -100, -100, -100, 1012, -100],
+        [-100, 2023, 2003, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = 1.8805668354034424
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.56it/s]
+12/04/2023 10:13:13 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:13:13 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:13 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.71it/s]
+12/04/2023 10:13:13 - INFO - __main__ -   epoch: 60
+12/04/2023 10:13:13 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:13:13 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:13:13 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+12/04/2023 10:13:14 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-60
+Epoch:  87%|████████▋ | 61/70 [01:21<00:11,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:13:15 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:13:15 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:15 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101,  103, 2003, 1037,    2, 1012,  102,    0],
+        [ 101, 2016,    3,  103, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, 2023, -100, -100, -100, -100, -100, -100],
+        [-100, -100, -100, 2012, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 1.8559972047805786
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.93it/s]
+12/04/2023 10:13:15 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:13:15 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:15 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.56it/s]
+12/04/2023 10:13:15 - INFO - __main__ -   epoch: 61
+12/04/2023 10:13:15 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:13:15 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:13:15 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s]
+12/04/2023 10:13:15 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-61
+Epoch:  89%|████████▊ | 62/70 [01:22<00:10,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:13:16 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:13:16 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:16 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003, 1037,    2,  103,  102,    0],
+        [ 101, 2016,    3, 2012, 1996, 4306,  103,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, 1012, -100, -100],
+        [-100, -100, -100, -100, -100, -100, 1012, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 0.05442221462726593
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.62it/s]
+12/04/2023 10:13:16 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:13:16 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:16 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.84it/s]
+12/04/2023 10:13:16 - INFO - __main__ -   epoch: 62
+12/04/2023 10:13:16 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:13:16 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:13:16 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+12/04/2023 10:13:17 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-62
+Epoch:  90%|█████████ | 63/70 [01:24<00:09,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:13:17 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:13:17 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:17 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023,  103, 1037,    2, 1012,  102,    0],
+        [ 101, 2016,    3, 2012, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, 2003, -100, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 0.3363107740879059
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.60it/s]
+12/04/2023 10:13:17 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:13:17 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:17 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.87it/s]
+12/04/2023 10:13:17 - INFO - __main__ -   epoch: 63
+12/04/2023 10:13:17 - INFO - __main__ -   all_diff: 0.75
+12/04/2023 10:13:17 - INFO - __main__ -   ctg0_diff: 0.5
+12/04/2023 10:13:17 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+12/04/2023 10:13:18 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-63
+Epoch:  91%|█████████▏| 64/70 [01:25<00:07,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:13:19 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:13:19 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:19 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101, 2016,    3, 2012, 1996,  103, 1012,  102],
+        [ 101, 2023, 2003, 1037,    2, 1012,  102,    0]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, 4306, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = 4.5829668045043945
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 42.69it/s]
+12/04/2023 10:13:19 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:13:19 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:19 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.76it/s]
+12/04/2023 10:13:19 - INFO - __main__ -   epoch: 64
+12/04/2023 10:13:19 - INFO - __main__ -   all_diff: 0.75
+12/04/2023 10:13:19 - INFO - __main__ -   ctg0_diff: 0.5
+12/04/2023 10:13:19 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.04it/s]
+12/04/2023 10:13:19 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-64
+Epoch:  93%|█████████▎| 65/70 [01:26<00:06,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:13:20 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:13:20 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:20 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101, 2016,    3, 2012, 1996, 4306, 1012,  102],
+        [ 101, 2023, 2003, 1037,    2, 1012,  102,    0]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = nan
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.34it/s]
+12/04/2023 10:13:20 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:13:20 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:20 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 46.94it/s]
+12/04/2023 10:13:20 - INFO - __main__ -   epoch: 65
+12/04/2023 10:13:20 - INFO - __main__ -   all_diff: 0.75
+12/04/2023 10:13:20 - INFO - __main__ -   ctg0_diff: 0.5
+12/04/2023 10:13:20 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s]
+12/04/2023 10:13:21 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-65
+Epoch:  94%|█████████▍| 66/70 [01:28<00:05,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:13:21 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:13:21 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:21 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003, 1037,    2, 1012,  102,    0],
+        [ 101, 2016,    3, 2012, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = nan
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.44it/s]
+12/04/2023 10:13:21 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:13:21 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:21 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.42it/s]
+12/04/2023 10:13:21 - INFO - __main__ -   epoch: 66
+12/04/2023 10:13:21 - INFO - __main__ -   all_diff: 0.75
+12/04/2023 10:13:21 - INFO - __main__ -   ctg0_diff: 0.5
+12/04/2023 10:13:21 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.07it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.07it/s]
+12/04/2023 10:13:22 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-66
+Epoch:  96%|█████████▌| 67/70 [01:29<00:03,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:13:22 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:13:22 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:22 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False,  True,  True],
+        [ True, False, False, False, False, False, False,  True]])
+nonce_tokens_mask:
+tensor([[False, False, False, False,  True, False, False, False],
+        [False, False,  True, False, False, False, False, False]])
+inputs: tensor([[ 101, 2023, 2003, 1037,  103, 1012,  102,    0],
+        [ 101, 2016,    3, 2012, 1996, 4306, 1012,  102]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100,    2, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1]], device='cuda:0')
+loss = 7.046245574951172
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 41.49it/s]
+12/04/2023 10:13:22 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:13:22 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:22 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.52it/s]
+12/04/2023 10:13:23 - INFO - __main__ -   epoch: 67
+12/04/2023 10:13:23 - INFO - __main__ -   all_diff: 0.75
+12/04/2023 10:13:23 - INFO - __main__ -   ctg0_diff: 0.5
+12/04/2023 10:13:23 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.07it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.07it/s]
+12/04/2023 10:13:23 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-67
+Epoch:  97%|█████████▋| 68/70 [01:30<00:02,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:13:24 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:13:24 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:24 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101, 2016,    3, 2012, 1996, 4306, 1012,  102],
+        [ 101, 2023,  103, 1037,    2, 1012,  102,    0]], device='cuda:0')
+labels: tensor([[-100, -100, -100, -100, 1996, -100, -100, -100],
+        [-100, -100, 2003, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = 0.16263827681541443
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.18it/s]
+12/04/2023 10:13:24 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:13:24 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:24 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.99it/s]
+12/04/2023 10:13:24 - INFO - __main__ -   epoch: 68
+12/04/2023 10:13:24 - INFO - __main__ -   all_diff: 0.75
+12/04/2023 10:13:24 - INFO - __main__ -   ctg0_diff: 0.5
+12/04/2023 10:13:24 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s]
+12/04/2023 10:13:25 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-68
+Epoch:  99%|█████████▊| 69/70 [01:32<00:01,  1.31s/it]
+Iteration:   0%|          | 0/1 [00:00<?, ?it/s][A12/04/2023 10:13:25 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:13:25 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:25 - INFO - __main__ -     Batch size = 16
+special_tokens_mask:
+tensor([[ True, False, False, False, False, False, False,  True],
+        [ True, False, False, False, False, False,  True,  True]])
+nonce_tokens_mask:
+tensor([[False, False,  True, False, False, False, False, False],
+        [False, False, False, False,  True, False, False, False]])
+inputs: tensor([[ 101,  103,  103,  103, 1996, 4306, 1012,  102],
+        [ 101, 2023, 2003, 1037,    2, 1012,  102,    0]], device='cuda:0')
+labels: tensor([[-100, 2016,    3, 2012, -100, -100, -100, -100],
+        [-100, -100, -100, -100, -100, -100, -100, -100]], device='cuda:0')
+attention_mask: tensor([[1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 0]], device='cuda:0')
+loss = 2.974116325378418
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 40.64it/s]
+12/04/2023 10:13:25 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:13:25 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:25 - INFO - __main__ -     Batch size = 16
+
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s][A[AEvaluating: 100%|██████████| 1/1 [00:00<00:00, 47.47it/s]
+12/04/2023 10:13:25 - INFO - __main__ -   epoch: 69
+12/04/2023 10:13:25 - INFO - __main__ -   all_diff: 0.75
+12/04/2023 10:13:25 - INFO - __main__ -   ctg0_diff: 0.5
+12/04/2023 10:13:25 - INFO - __main__ -   ctg1_diff: 1.0
+
+Iteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s][AIteration: 100%|██████████| 1/1 [00:00<00:00,  2.05it/s]
+12/04/2023 10:13:26 - INFO - __main__ -   Saving model checkpoint to checkpoints/bert-base-uncased/unused_pairs_1/testexp_nv_unused_token_numbers_1_2_learning_rate_0.001_seed_1/checkpoint-69
+Epoch: 100%|██████████| 70/70 [01:33<00:00,  1.31s/it]Epoch: 100%|██████████| 70/70 [01:33<00:00,  1.33s/it]
+12/04/2023 10:13:26 - INFO - __main__ -    global_step = 70, average loss = 2.9073366595964347
+12/04/2023 10:13:26 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:13:26 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:26 - INFO - __main__ -     Batch size = 16
+Best dev for structurally different:  1.0 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62]
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]Evaluating: 100%|██████████| 1/1 [00:00<00:00, 40.80it/s]
+12/04/2023 10:13:26 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:13:26 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:26 - INFO - __main__ -     Batch size = 16
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]Evaluating: 100%|██████████| 1/1 [00:00<00:00, 47.93it/s]
+12/04/2023 10:13:26 - INFO - __main__ -   epoch: 0
+12/04/2023 10:13:26 - INFO - __main__ -   all_diff: 0.75
+12/04/2023 10:13:26 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:13:26 - INFO - __main__ -   ctg1_diff: 0.5
+12/04/2023 10:13:26 - INFO - __main__ -   ***** Running evaluation on ctg0_diff *****
+12/04/2023 10:13:26 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:26 - INFO - __main__ -     Batch size = 16
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]Evaluating: 100%|██████████| 1/1 [00:00<00:00, 46.65it/s]
+12/04/2023 10:13:26 - INFO - __main__ -   ***** Running evaluation on ctg1_diff *****
+12/04/2023 10:13:26 - INFO - __main__ -     Num examples = 2
+12/04/2023 10:13:26 - INFO - __main__ -     Batch size = 16
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]Evaluating: 100%|██████████| 1/1 [00:00<00:00, 47.73it/s]
+12/04/2023 10:13:26 - INFO - __main__ -   epoch: 62
+12/04/2023 10:13:26 - INFO - __main__ -   all_diff: 1.0
+12/04/2023 10:13:26 - INFO - __main__ -   ctg0_diff: 1.0
+12/04/2023 10:13:26 - INFO - __main__ -   ctg1_diff: 1.0
+usage: conda [-h] [--no-plugins] [-V] COMMAND ...
+conda: error: argument COMMAND: invalid choice: 'deactivate' (choose from 'clean', 'compare', 'config', 'create', 'info', 'init', 'install', 'list', 'notices', 'package', 'remove', 'uninstall', 'rename', 'run', 'search', 'update', 'upgrade', 'build', 'content-trust', 'convert', 'debug', 'develop', 'doctor', 'index', 'inspect', 'metapackage', 'render', 'skeleton', 'token', 'verify', 'env', 'server', 'pack', 'repo')

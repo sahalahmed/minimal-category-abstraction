@@ -1071,10 +1071,10 @@ def main():
 
     args = parser.parse_args()
 
-    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.deterministic = True # Ensure deterministic behavior
     torch.backends.cudnn.benchmark = False
 
-    if args.model_type in ["bert", "roberta", "distilbert", "camembert"] and not args.mlm:
+    if args.model_type in ["bert", "roberta", "distilbert", "camembert"] and not args.mlm: # Required mlm for the listed model types
         raise ValueError(
             "BERT and RoBERTa-like models do not have LM heads but masked LM heads. They must be run using the --mlm "
             "flag (masked language modeling)."
@@ -1150,29 +1150,29 @@ def main():
 
     model_class = AutoModelForMaskedLM if args.mlm else AutoModelForCausalLM
 
-    if args.config_name:
+    if args.config_name: # Load the model configuration
         config = AutoConfig.from_pretrained(args.config_name, cache_dir=args.cache_dir, output_hidden_states=True)
     elif args.model_name_or_path:
         config = AutoConfig.from_pretrained(args.model_name_or_path, cache_dir=args.cache_dir, output_hidden_states=True)
     else:
-        config = CONFIG_MAPPING[args.model_type]()
+        config = CONFIG_MAPPING[args.model_type]() # If no config name/path provided, initialize new config from predefined mapping
         logger.warning("You are instantiating a new config instance from scratch.")
     print(f"Vocab size in initial config: {config.vocab_size}")
 
-    n_total_tokens = 2 * args.n_tokens
-    if args.tokens is None:
+    n_total_tokens = 2 * args.n_tokens # Calculate the total number of tokens required
+    if args.tokens is None: # Generate tokens if not provided
         args.tokens = [f'[novel-{ctg_n}-{k}]' for ctg_n in range(2) for k in range(args.n_tokens)]
     else:
         assert len(args.tokens) == n_total_tokens, f"Number of tokens should be {n_total_tokens}"
-    args.unused_list = []
-    if args.model_type in ["bert"]:
+    args.unused_list = [] # Initialize empty list for unused tokens
+    if args.model_type in ["bert"]: # Add unused tokens based on the model type
         args.unused_list.extend(map('[unused{}]'.format, range(0, 994)))
     if args.model_type in ["roberta"]:
         args.unused_list.extend(map('[unused{}]'.format, range(1, 3)))
-    for token in args.tokens:
+    for token in args.tokens: # Add custom tokens to the unused list
         if token not in args.unused_list:
             args.unused_list.append(token)
-    if args.model_type == 'bert':
+    if args.model_type == 'bert': # Create a special tokens dictionary based on the model type
         special_tokens_dict = {
             "pad_token": "[PAD]",
             "mask_token": "[MASK]",
@@ -1184,7 +1184,7 @@ def main():
             "mask_token": "<mask>",
             "additional_special_tokens": args.unused_list,
         }
-    if args.tokenizer_name:
+    if args.tokenizer_name: # Initialize the tokenizer based on provided options or pre-trained model
         tokenizer = AutoTokenizer.from_pretrained(args.tokenizer_name, cache_dir=args.cache_dir, **special_tokens_dict)
     elif args.model_name_or_path:
         tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path, cache_dir=args.cache_dir, **special_tokens_dict)
@@ -1193,13 +1193,13 @@ def main():
             "You are instantiating a new tokenizer from scratch. This is not supported, but you can do it from another script, save it, and load it from here, using --tokenizer_name"
         )
     print(f"Vocab size in final tokenizer: {len(tokenizer)}")
-    if isinstance(tokenizer, (transformers.GPT2Tokenizer, transformers.GPT2TokenizerFast)):
+    if isinstance(tokenizer, (transformers.GPT2Tokenizer, transformers.GPT2TokenizerFast)): # Flag for space prepending based on tokenizer type
         args.prepend_space = ' '
     else:
         args.prepend_space = None
     args.unused_list_ids = tokenizer.additional_special_tokens_ids
     args.unused_list_ids_set = set(args.unused_list_ids)
-    print(f'tokens: {" ".join(args.tokens)}')
+    print(f'tokens: {" ".join(args.tokens)}') # Display informtaion about the generated tokens and sequences
     args.token_ids = tokenizer.convert_tokens_to_ids(args.tokens)
     print(f'token ids: {" ".join(map(str, args.token_ids))}')
     args.token_sequences = [args.token_ids[ctg_n * args.n_tokens : (ctg_n + 1) * args.n_tokens] for ctg_n in range(2)]
@@ -1252,7 +1252,7 @@ def main():
     logger.info("Training/evaluation parameters %s", args)
 
     # evaluate untrained model
-    evaluate_prob(args, model, tokenizer, -1, 'test', longer=args.eval_longer, pll_whole_sentence=args.pll_whole_sentence)
+    evaluate_prob(args, model, tokenizer, -1, 'test', longer=args.eval_longer, pll_whole_sentence=args.pll_whole_sentence) # Returns mean accuracy for datas for each epoch
 
     # Training
     if args.do_train:
@@ -1273,7 +1273,7 @@ def main():
         print(f'Not freezing embeddings weight parameter {embeddings_weight_name} of size {embeddings_weight.size()}')
         embeddings_weight.requires_grad = True
 
-        train_dataset = MaskReplacedTextDataset(
+        train_dataset = MaskReplacedTextDataset( # Create a dataset for training with masked tokens
             tokenizer,
             raw_texts=read_lines(args.train_data_file),
             replace_strs=args.token_sequences_text,
@@ -1284,10 +1284,10 @@ def main():
 
         print(f'TRAIN DATASET: {train_dataset.text_words}')
 
-        if args.local_rank == 0:
+        if args.local_rank == 0: # If in distributed training and in the first process, process the dataset
             torch.distributed.barrier()
 
-        global_step, tr_loss = train(args, train_dataset, model, tokenizer)
+        global_step, tr_loss = train(args, train_dataset, model, tokenizer) # Train model and get the global and average loss
         logger.info(" global_step = %s, average loss = %s", global_step, tr_loss)
 
 
@@ -1313,9 +1313,9 @@ def main():
     # evaluate the model after the first epoch and selected models
     for i in [0, best_diff_ep]:
     # for i in [0, best_diff_ep, best_ident_ep]:
-        model = switch_model_checkpoint(model, os.path.join(args.output_dir, f'checkpoint-{i}'), args)
+        model = switch_model_checkpoint(model, os.path.join(args.output_dir, f'checkpoint-{i}'), args) 
         model.to(args.device)
-        evaluate_prob(args, model, tokenizer, i, 'test', longer=args.eval_longer, pll_whole_sentence=args.pll_whole_sentence)
+        evaluate_prob(args, model, tokenizer, i, 'test', longer=args.eval_longer, pll_whole_sentence=args.pll_whole_sentence) # Evaluate on the test set
 
 
 if __name__ == "__main__":
